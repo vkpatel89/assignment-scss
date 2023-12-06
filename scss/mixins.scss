@@ -1,0 +1,14 @@
+@mixin minwidth($width){
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+@mixin maxwidth($width){
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin iconAsBg($width, $height){
+    width: $width;
+    height: $height;  
+}
